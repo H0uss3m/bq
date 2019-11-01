@@ -1,0 +1,38 @@
+<mat-card>
+  <div class=" container">
+    <div class="axe-titre container row">
+      <p class="col-md-10">{{listeAxes?.nomAxe}}</p>
+      <div class="card-menu col-md-2">
+        <mat-menu #appMenu="matMenu">
+          <mat-card-subtitle class="container">ACTIONS</mat-card-subtitle>
+          <mat-divider></mat-divider>
+          <button mat-menu-item>Créer un élément</button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item (click)="renomerAxe(listeAxes?.nomAxe)">Renommer</button>
+
+          <mat-divider></mat-divider>
+          <button mat-menu-item>Modifier la couleur</button>
+          <mat-divider></mat-divider>
+          <button (click)="deleteAxeById(listeAxes?.idAxe)" mat-menu-item>Supprimer</button>
+          <mat-divider></mat-divider>
+
+          <button mat-menu-item [matMenuTriggerFor]="tri">Trier par</button>
+          <mat-divider></mat-divider>
+
+          <mat-menu #tri="matMenu">
+            <button mat-menu-item>Vertebrates</button>
+            <button mat-menu-item>Invertebrates</button>
+          </mat-menu>
+        </mat-menu>
+
+        <button class="icon-menu" mat-icon-button [matMenuTriggerFor]="appMenu">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </div>
+    <div (click)="ajoutElement(listeAxes.idAxe)" class="btn-ajout">+</div>
+  </div>
+  <div class="elements" *ngFor="let element of listeAxes.listElement">
+    <app-element [element]="element" [idAxe]="listeAxes.idAxe"></app-element>
+  </div>
+</mat-card>

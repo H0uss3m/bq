@@ -1,0 +1,52 @@
+{{log(modele|async)}}
+<button type="button" class="close close-mdl" aria-label="Close" (click)="onClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h6  class="title-mdl"matDialogTitle>Créer une matrice</h6>
+  
+  <mat-divider></mat-divider>
+  
+  <div class="row " >
+    <div class="col-md-6 choix-creation-matrice" >
+       
+                <button class="item-matrice" (click)="changeList('0')" 
+                    [ngClass]="{'active': showListMatrice == true}">
+                  <div class="icon-module mx-auto w-50 p-3"></div>
+                  <div class="title">A partir d'une matrice</div> 
+  
+                </button>
+    </div>
+    <div class="col-md-6 choix-creation-matrice">
+                <button class="item-matrice" (click)="changeList('1')" 
+                 [ngClass]="{'active': showListModele == true}">
+                    <div class="icon-view mx-auto w-50 p-3"></div>
+                    <div class="title">A partir d'un modèle</div> 
+                </button>
+    </div>
+  </div>
+  <div class="container" [hidden]="!showListMatrice">
+  <div class="form-group" >
+    <label class ="label label-default title-selector " for="FormControl">MATRICE</label>
+    <select class="form-control form-select" id="FormControl" [(ngModel)]="form.idMatrice" value="Sélectionner une matrice">
+     <option value="0">Sélectionner une matrice</option>
+     <option *ngFor="let matrice of matrices ; let i=index" [value]="matrice.id">{{matrice.nom}}</option>
+  
+    </select>
+  </div>
+  </div>
+  <div  class="container"[hidden]="showListMatrice">
+  
+      <label class ="label label-default title-selector " for="FormControl">MODELE</label>
+      <div class="form-group">
+      <select class="form-control form-select" id="FormControl" [(ngModel)]="form.idModele" value="Sélectionner un modéle">
+       <i class="fa fa-heart"></i>
+       <option value="0">Sélectionner un modèle</option>
+        <option  [value]="m.id" *ngFor="let m of modeles ; let i=index">{{m.nom}}</option>    
+      </select>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="d-flex justify-content-end mr-3 mt-3">
+      <button type="button" class="btn button-close" (click)="onClose()" >Annuler</button>
+      <button type="button" class="btn btn-secondary button-suivant" (click)="creerMatrice()">Suivant</button>
+  </div>

@@ -1,0 +1,226 @@
+.toolbar {
+  width: 1280;
+  height: 68px;
+  box-shadow: 0px 3px 6px #003b7d40;
+}
+.band-navbar {
+  width: 124px;
+  height: 68px;
+}
+.link {
+  padding: 18px;
+  height: 64px;
+  opacity: 0.5;
+}
+
+.menu {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+  opacity: 1;
+}
+.item-menu {
+  width: 264px;
+  height: 60px;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-family: "Regular 13px/18px Open Sans";
+  text-align: left;
+  letter-spacing: 0;
+}
+.item-menu-search {
+  width: 264px;
+  height: 60px;
+  opacity: 1;
+  color: #003b7d;
+  background-color: #ffffff;
+  font-family: "Regular 13px/18px Open Sans";
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+  padding: 0%;
+}
+
+
+.dropdown-item-btn {
+  width: 90%;
+  padding: 7px;
+  margin-left: 4%;
+  margin:5%;
+  height: 37px;
+  background: #d1dae4 0% 0% no-repeat padding-box;
+  font-family: "Regular 13px/18px Open Sans";
+  color: #003b7d;
+  opacity: 1;
+}
+.dropdown-item-btn-matrice {
+  outline: transparent !important;
+  height: 60px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+  opacity: 1;
+  align-items: left;
+  padding: 0%;
+  padding: 24px 23px;
+}
+.divider {
+  margin: 0%;
+  padding: 0px;
+}
+.divider-top {
+  margin: 0%;
+}
+.input-search {
+  
+  outline: transparent !important;
+  border: 0.5px solid #BFCCDB; 
+  border-radius: 2px; 
+  opacity: 1;
+  height: 37px;
+  width: 100%;  
+  margin: 10px;
+  padding: 5px;
+  font-family: "Regular 13px/18px Open Sans";
+  letter-spacing: 0;
+  color: #B5C4D5;
+  background: transparent url('../../../../assets/images/baseline-search-24px.png') 97% 32% no-repeat padding-box;
+
+}
+
+
+.menu-modele{
+  width: 264px;
+}
+
+.icon-home {
+  top: 24px;
+  left: 425px;
+  width: 24px;
+  height: 24px;
+  padding-left: 35px;
+  background: transparent url("../../../../assets/images/noun_Home_2860459.png") 0% 0% no-repeat padding-box;
+
+}
+.icon-view {
+  top: 22px;
+  left: 598px;
+  width: 24px;
+  height: 24px;
+  padding-left: 35px;
+  background: transparent url("../../../../assets/images/baseline-view_column-24px.png") 0% 0% no-repeat padding-box;
+
+}
+.icon-module {
+  top: 22px;
+  left: 598px;
+  width: 24px;
+  height: 24px;
+  padding-left: 35px;
+  background: transparent url("../../../../assets/images/baseline-view_module-24px.png") 0% 0% no-repeat padding-box;
+ 
+}
+
+.icon-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: aliceblue;
+  background: #003b7d 0% 0% no-repeat padding-box;
+  background: transparent url("../../../../assets/images/plus.png") 0% 0% no-repeat padding-box;
+  
+}
+
+.mat-btn-menu {
+  width: 247px;
+  height: 37px;
+  background: #d1dae4 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  margin: 9px;
+}
+
+.title-menu {
+  text-align: left;
+  font-family: "Regular 14px/19px Open Sans";
+  letter-spacing: 0;
+  color: #003b7d;
+  opacity: 0.5;
+}
+
+
+
+.active{ 
+  color: #003b7d;
+  border-bottom: 3px solid #003b7d;  
+  background-color: white;
+  opacity: 1;
+  z-index: 1000;
+} 
+ .active .title-menu {
+  opacity: 1;
+} 
+
+.active .link {
+  opacity: 1;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    color:  #003b7d !important;
+}
+
+
+.dropdown,
+.dropleft,
+.dropright,
+.dropup {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+.navbar {
+  user-select: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(82%,85.5%,89.4%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+  margin-bottom: 16px;
+  border-color: #d1dae4;
+}
+
+.btn-circle {
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  top: 216px;
+  left: 579px;
+  background: #003b7d 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: #d1dae4;
+  margin-left: 5px;
+  margin-right: 8px;
+}
+.nav-item {
+  cursor: pointer
+}
+
+li {
+  outline-color: transparent;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #B5C4D5;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #B5C4D5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#B5C4D5;
+}

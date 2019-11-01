@@ -1,0 +1,100 @@
+.element-item {
+    top: 270px;
+    left: 73px;
+    width: 231px;
+    height: 115px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 4px #00000029;
+    border: 3px solid #1ea5a5;
+    opacity: 1;
+    margin-bottom: 10%
+}
+
+.element-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    height: 26px;
+    margin-top: -5%
+}
+
+.element-header-ref {
+    font-family: " Semibold 12px/17px Open Sans";
+    color: #003b7d;
+    opacity: 1;
+    font-size: 12px;
+    margin-right: 78px;
+    border-radius: 50%;
+    border: 3px solid #1ea5a5;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff
+}
+
+.element-header-ref p {
+    margin-left: 9%;
+    margin-top: 9%
+}
+
+.element-header-res {
+    font-family: " Semibold 12px/17px Open Sans";
+    color: #003b7d;
+    opacity: 1;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 3px solid #1ea5a5;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff
+}
+
+
+.element-header-res p {
+    margin-left: 9%;
+    margin-top: 9%
+}
+.element-item-description p {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Semibold 14px/19px Open Sans';
+    letter-spacing: 0;
+    color: #3c3c3c;
+    opacity: 1;
+    height: 46px;
+  }
+
+.view-btn {
+    top: 382px;
+    left: 104px;
+    width: 28px;
+    height: 17px;
+    opacity: 1;
+    background: transparent url("../../../../assets/images/noun_Eye_2858973.svg") 0% 0% no-repeat padding-box;
+  }
+  
+  .edit-btn {
+    top: 380px;
+    left: 1064px;
+    width: 21px;
+    height: 21px;
+    background: transparent url("../../../../assets/images/baseline-edit-24px.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .delete-btn {
+    top: 379px;
+    left: 1112px;
+    width: 25px;
+    height: 25px;
+    background: transparent url("../../../../assets/images/baseline-delete-24px.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .lien-btn {
+    top: 379px;
+    left: 1112px;
+    width: 25px;
+    height: 25px;
+    background: transparent url("../../../../assets/images/baseline-delete-24px.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }

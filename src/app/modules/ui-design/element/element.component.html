@@ -1,0 +1,21 @@
+<div class="col-md-12">
+  <div class="element-item">
+    <div class="element-header">
+      <div class="element-header-ref">
+        <p>{{element.ponderationRef}}</p>
+      </div>
+      <div class="element-header-res">
+        <p>{{element.ponderationRes}}</p>
+      </div>
+    </div>
+    <div class="element-item-description container">
+      <p> {{element.descriptionElement}}</p>
+    </div>
+    <div class="element-footer d-flex justify-content-between container">
+        <div class="view-btn" (click)="voirElement(element)"></div>
+        <div class="edit-btn" (click)="modifierElement(element)"></div>
+        <div class="delete-btn" (click)="deleteElement(element)"></div>
+        <div class="lien-btn"></div>
+    </div>
+  </div>
+</div>

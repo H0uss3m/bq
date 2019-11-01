@@ -1,0 +1,20 @@
+<button type="button" class="close close-mdl" aria-label="Close" (click)="onClose()">
+  <span aria-hidden="true">&times;</span>
+</button>
+<h6 class="title-mdl"matDialogTitle>{{dataTemplate.titleAjoutTemplate}}</h6>
+
+<mat-divider></mat-divider>
+<div class="container">
+    <form class="form" [formGroup]="createForm" (ngSubmit)="enregistrerAxe()">
+      <div class="form-group" id="align-element" >
+          <label class ="label label-default title-selector " for="FormControl">{{dataTemplate.inputNom}}</label>
+          <input type="text" class="form-control form-input" id="FormControl" formControlName ="nom" value ="{{dataTemplate.ValueNom}}" placeholder="{{dataTemplate.placeholderNom}}">
+        </div>
+        <mat-divider></mat-divider>
+        <div class="d-flex justify-content-end mr-3 mt-3">
+            <button type="button" class="btn button-close" (click)="onClose()" >Annuler</button>
+            <button type="submit" class="btn btn-secondry button-creer" >Créer</button>
+        </div>
+  </form>
+</div>
+

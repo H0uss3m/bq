@@ -1,0 +1,65 @@
+
+.element-item {
+   
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 4px #00000029;
+    border: 3px solid #1ea5a5;
+    opacity: 1;
+    margin-bottom: 10%
+  }
+  .card-menu{
+    margin-top: -4%;
+  }
+  ::ng-deep .mat-menu-content:not(:empty){
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    min-height: 131px;
+
+}
+  
+  .axe-titre {
+    font-size: 15px;
+    color: #003B7D;
+    font-family: 'Semibold 15px/20px Open Sans';
+  }
+  
+  
+  .elements {
+    margin: 1%
+  }
+  mat-card {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    padding-top: 6% !important;
+    padding-bottom: 1% !important;
+    min-height: 934px;
+  }
+  
+  .btn-ajout {
+    background-color: #ffff;
+    text-align: center;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid #D1DAE4;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #003B7D;
+    margin-bottom: 9%;
+    
+
+
+  }
+  
+  .mat-card {
+    background-color: #F8F8F8;
+  }
+  
+
+  mat-card-subtitle{
+    margin:0% !important;
+    color:#003B7D;
+    font-size: 13px;
+    font-family: 'Semibold 13px/18px Open Sans;';
+    padding:9%
+  }

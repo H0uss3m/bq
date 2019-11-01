@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-md toolbar">
+    <div class="d-flex justify-content-between ">
+        <img src="assets/images/LogoBDF.png" class="band-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item mr-5" routerLink="/accueil" routerLinkActive="active" >
+                <a class="nav-link link d-flex" >
+                    <span class="icon-home"></span>
+                        <p class="title-menu">Accueil</p>
+                    
+                </a>
+            </li> 
+            <!--***************************************menu Modele ******************************************-->
+
+
+            <li class="nav-item dropdown mr-5"  routerLinkActive="active" >
+                <a class="nav-link link d-flex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class=" icon-view "> </span>                   
+                   <p class="title-menu">
+                        Modèles
+                   </p>
+                </a>
+                <div class="dropdown-menu p-0 menu menu-modele">
+                    
+                    <div *ngFor="let modele of modeles ; let i = index">                        
+                            <button class="dropdown-item dropdown-item-btn-matrice" routerLink="/modeles" 
+                                (click)="visualiserModele(modele)">
+                                {{modele.nom}}
+                            </button>
+                            <div class="dropdown-divider divider"></div>
+                        
+                    </div>
+
+                    <button type="button" class="dropdown-item dropdown-item-btn btn btn-light d-flex"
+                    (click)="creerModele()">
+                        <i class="add-icon material-icons mr-3">
+                            add_circle
+                        </i> Créer un modèle
+                    </button>
+                </div>
+
+            </li>
+
+
+
+
+
+            <!--***************************************menu Matrice ******************************************-->
+             <li class="nav-item dropdown mr-5"  routerLinkActive="active" >
+                <a class="nav-link link d-flex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class=" icon-module"> </span>                   
+                    <p class="title-menu">Matrices</p>                       
+                </a>
+                <div class="dropdown-menu p-0 menu">
+                    <div class="dropdown-item item-menu-search">
+                        <div class="input-group ">
+                            <input type="text" [(ngModel)]="searchText" name="searchText" (input)="searchText"
+                                class="input-search " placeholder="Rechercher">
+
+
+                        </div>
+
+                    </div>
+                    <div *ngFor="let matrice of matrices | search:'nom':searchText ; let i = index">
+                        <div *ngIf="i<5">
+                            <button class="dropdown-item dropdown-item-btn-matrice" routerLink="/matrices/:matrice.id" 
+                                (click)="visualiserMatrice(matrice)">
+                                {{ matrice.nom }}
+                            </button>
+                            <div class="dropdown-divider divider"></div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="dropdown-item dropdown-item-btn btn btn-light d-flex"
+                        (click)="ajouterMatrice()">
+                        <i class="add-icon material-icons mr-3">
+                            add_circle
+                        </i> Créer une matrice
+                    </button>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</nav> 
+<router-outlet></router-outlet>
+
+

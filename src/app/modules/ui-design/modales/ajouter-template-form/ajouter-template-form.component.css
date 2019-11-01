@@ -1,0 +1,129 @@
+::ng-deep .mat-dialog-container {
+    padding: 0%;
+    overflow: auto;
+  }
+  
+  .close-mdl {
+    top: 333px;
+    left: 855px;
+    width: 14px;
+    height: 14px;
+    color: #d8d8d8;
+    opacity: 1;
+    margin-right: 32px;
+    margin-top: 27px;
+  }
+  .title-mdl {
+    padding-left: 28px;
+    padding-top: 24px;
+    text-align: left;
+    font: Semibold 18px/24px Open Sans;
+    letter-spacing: 0.23px;
+    color: #3c3c3c;
+    opacity: 1;
+  }
+  .title-selector {
+    width: 207px;
+    height: 19px;
+    font: Semibold 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #003b7d;
+    opacity: 1;
+  }
+  #align-element {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #FormControl {
+    outline: transparent !important;
+  }
+  .form-input {
+    width: 438px;
+    height: 40px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 0.5px solid #bfccdb;
+    border-radius: 2px;
+    color: #6c757d;
+    opacity: 1;
+  }
+  .form-textarea {
+    width: 438px;
+    height: 103px;
+    resize: none;
+    display: block;
+  }
+  ::placeholder {
+    color: #b5c4d5;
+    opacity: 1;
+  }
+  mat-form-field-wrapper {
+    margin-top: -10px !important;
+  }
+  mat-icon {
+    align-content: center;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+  .title {
+    top: 352px;
+    left: 465px;
+    width: 124px;
+    height: 39px;
+    text-align: center;
+    font: "Semibold 14px/19px Open Sans";
+    letter-spacing: 0;
+    color: #003b7d;
+    opacity: 1;
+  }
+  
+  .button-close {
+    top: 573px;
+    left: 658px;
+    width: 100px;
+    height: 37px;
+    border: 1px solid #003b7d;
+    border-radius: 4px;
+    opacity: 1;
+    margin-right: 20px;
+    text-align: center;
+    font: "Semibold 13px/18px Open Sans";
+    letter-spacing: 0;
+    color: #003b7d;
+    opacity: 1;
+  }
+  
+  .button-creer {
+    top: 573px;
+    left: 780px;
+    width: 100px;
+    height: 37px;
+    background: #003b7d 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: "Regular 13px/18px Open Sans";
+    letter-spacing: 0;
+    color: #ffffff;
+    opacity: 1;
+    border-color: #003b7d;
+  }
+  mat-button .mat-grid :hover {
+    background-color: #ffffff;
+  }
+  
+  .justify-content-around {
+    padding-left: 12%;
+  }
+  .row {
+    margin-right: 0% !important;
+  }
+  a:hover a:focus {
+    border-color: nane;
+    text-decoration: none;
+  }
+  .close-mdl:focus {
+    outline-color: transparent;
+  }
+  

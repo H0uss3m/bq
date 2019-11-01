@@ -1,0 +1,96 @@
+.matrice-container {
+    margin-top: 2%;
+    margin-left: 4.14%;
+    max-height: 800px;
+  }
+  
+  .matrice-titre {
+    font-size: 16px;
+    font-family: "Semibold 16px/22px Open Sans;";
+    margin-top: 3px;
+  
+  }
+  
+  .main-titre {
+    color: #003b7d;
+  
+  }
+  
+  .axe-container {
+    flex-wrap: nowrap !important;
+  }
+  
+  .icon-menu {
+    margin-top: -17%
+  }
+  
+  .axes {
+    margin: 1%;
+    min-width: 261px;
+  }
+  
+  .icon-ajout {
+    background-color: #005CA9;
+    width: 37px;
+    justify-content: center;
+    height: 37px;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+  
+  }
+  
+  .icon-versionner {
+    background-color: #005CA9;
+    width: 37px;
+    justify-content: center;
+    height: 37px;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+  
+  }
+  
+  .icon-enregistrer {
+    background-color: #005CA9;
+    width: 37px;
+    justify-content: center;
+    height: 37px;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+  
+  }
+  
+  .icon-telechargement {
+    background-color: #005CA9;
+    width: 37px;
+    justify-content: center;
+    height: 37px;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .ajout-axe {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1DAE4;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  .ajout-axe span {
+    font-weight: bold;
+    color: #003B7D;
+    font-size: 14px;
+  }

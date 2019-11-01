@@ -1,0 +1,124 @@
+ <div class="container-fuild">
+
+  <!-- row header  -->
+  <div class="header">
+    <div class="title-header">
+      <label class="title-modal">{{titleModal}}</label>
+    </div>
+
+    <div class="icon-close">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+
+
+  <!-- ROW CONTENT -->
+  <form [formGroup]="elementForm">
+    <p class="nom-element">NOM DE L'ELEMENT</p>
+    <div class="col input-nom">
+      <input class="input-nom-element" type="text" formControlName="nomElement" style="width: 100%;" placeholder="Nommez l'élément "/>
+    </div>
+
+
+    <div class="content-description">
+
+      <div>
+        <p class="description"> DESCRIPTION (optionnel)</p>
+      </div>
+
+      <div style="padding-bottom:8%">
+        <textarea cols="20" rows="10" formControlName="descriptionElement" class="input-description" type="text"
+          placeholder="Décrivez élément">
+      </textarea>
+      </div>
+    </div>
+
+    <!-- ***************************COL1 **************************-->
+
+    <div class="coll-matrice">
+      <div>
+        <p class="description-matrice">MATRICE</p>
+      </div>
+
+
+      <div class="column-matrice row-table ">
+        <div class="col-table">
+          Corrélation
+        </div>
+
+        <div class="col-table">
+          <div>
+            Contribution Référence
+          </div>
+
+          <div>
+            <div style="display: flex;flex-direction: row;justify-content: space-evenly">
+              <div>
+                Pondération
+              </div>
+
+              <div>
+                valeur
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-table">
+          <div>
+            Contribution Résultat
+          </div>
+
+          <div class="col-span-table">
+
+            <div style="display: flex;flex-direction: row;justify-content: space-evenly">
+              <div>
+                Pondération
+              </div>
+
+              <div>
+                valeur
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-span-table">
+
+        <input class="form-control" name="correlation" formControlName="correlation" type="number">
+
+        <input class="form-control" name="ponderationRef" formControlName="ponderationRef" type="number" max="5" min="1">
+
+
+        <input class="form-control" name="valInitial" formControlName="valInitial" type="number">
+
+
+        <input class="form-control" name="ponderationRes" formControlName="ponderationRes" type="number">
+
+
+        <input class="form-control" name="valFinale" formControlName="valFinale" type="number">
+      </div>
+      <mat-divider></mat-divider>
+      <div class="row-footer" *ngIf="data.action !='voir'">
+        <button class="btn-annuler" ml-2 (click)="close()">Annuler</button>
+        <button class="btn-enregistrer" (click)="enregistrer()" >Enregistrer</button>
+      </div>
+      <div class="row-footer" *ngIf="data.action==='voir'">
+        <button class="btn-close"  (click)="close()">ok</button>
+      </div>
+
+    </div>
+  </form>
+</div> -->

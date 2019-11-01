@@ -1,0 +1,94 @@
+.card {
+    width: 200px;
+    height: 130px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    user-select: none;
+
+}
+
+.card img {
+    height: 80px;
+    opacity: 0.5;
+}
+
+.modele-descreption {
+
+    height: 50px;
+}
+
+.date-modification-modele {
+    font-size: 12px;
+    font-family: 'Light 12px/17px Open Sans';
+    letter-spacing: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 17px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    color: #003B7D;
+}
+
+.modele-titre {
+    font-size: 13px;
+    margin-bottom: 2.91px;
+    margin-left: 12.91px;
+    margin-top: 6.19px;
+    width: 82px;
+    height: 18px;
+    font-family: 'Semibold 13px/18px Open Sans';
+    letter-spacing: 0;
+    color: #003B7D;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.icon-menu {
+    position: absolute;
+    z-index: 1;
+    right: 6px;
+    top: 7px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    line-height: 22px;
+    // width: 100%;
+
+}
+
+.icon-menu i {
+    background: #003B7D 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.modele-descreption-container {
+    display: flex;
+    align-items: center;
+    background: #D1DAE4 0% 0% no-repeat padding-box
+}
+
+.modele-btn {
+    font-size: 12px;
+    font-family: "Regular 12px/17px Open Sans;";
+    letter-spacing: 0;
+    color: #003B7D;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border-radius: 6px;
+    width: 31.5%;
+    height: 21px;
+    justify-content: center;
+    margin:auto
+}
+.row {
+    margin-right: 0;
+    margin-left: 0
+}
+::ng-deep .mat-menu-content:not(:empty){
+    padding-top: 0!important;
+    padding-bottom: 0!important
+}

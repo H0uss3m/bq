@@ -1,0 +1,56 @@
+<!-- {{log(matrice|async)}} -->
+<div class="matrice-container ">
+  <div class="row">
+  <div class="main-titre d-flex">
+    <p class="matrice-titre">{{ (matrice | async)?.nom }}</p>
+
+    <div class="card-menu">
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item>Renommer</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Dupliquer</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Historiques des versions</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Supprimer</button>
+      </mat-menu>
+
+      <button class="icon-menu" mat-icon-button [matMenuTriggerFor]="appMenu">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+    </div>
+  </div>
+  <div class="buttons">
+    <div (click)="ajouterAxe()" class="icon-ajout">
+
+      <img src="../../../../assets/images/add.png" >    
+    </div>  
+    <div class="icon-versionner">
+
+        <img src="../../../../assets/images/noun_versioning_1853530.png" >    
+      </div>  
+      <div class="icon-enregistrer">
+
+          <img src="../../../../assets/images/baseline-save-24px.png" >    
+        </div>  
+        <div class="icon-telechargement">
+
+            <img src="../../../../assets/images/download.png" >    
+          </div>  
+            
+
+  </div>
+</div>
+
+  <div class=" axe-container row mr-0">
+    <div class="axes" *ngFor="let axe of (matrice | async)?.listAxe">
+      <app-axe  [type]="(matrice | async)?.type" [listeAxes]="axe"></app-axe>
+    </div>
+    <div class="ajout-axe" > 
+        <span>
+        +  Créer un axe
+      </span>
+    </div>
+  </div>
+  
+</div>
